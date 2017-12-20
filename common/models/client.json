@@ -1,11 +1,24 @@
 {
   "name": "Client",
   "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
   "properties": {
+    "id": {
+      "type": "string"
+    },
     "name": {
       "type": "string"
     },
-    "clients": {
+    "email": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "Clients": {
       "type": [
         "object"
       ]
@@ -13,6 +26,20 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [],
-  "methods": []
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "find"
+    },
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
 }

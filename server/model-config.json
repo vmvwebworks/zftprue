@@ -13,32 +13,8 @@
       "./mixins"
     ]
   },
-  "User": {
-    "dataSource": "remoteClients"
-  },
-  "AccessToken": {
-    "dataSource": "remoteClients",
-    "public": false
-  },
-  "ACL": {
-    "dataSource": "remoteClients",
-    "public": false
-  },
-  "RoleMapping": {
-    "dataSource": "remoteClients",
-    "public": false,
-    "options": {
-      "strictObjectIDCoercion": true
-    }
-  },
-  "Role": {
-    "dataSource": "remoteClients",
-    "public": false
-  },
-  "Message": {
-    "dataSource": null
-  },
   "Client": {
-    "dataSource": "remoteClients"
+    "dataSource": "remoteClients",
+    "public": "true"
   }
 }
