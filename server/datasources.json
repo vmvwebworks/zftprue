@@ -1,7 +1,11 @@
 {
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
   "remoteClients": {
     "name": "remoteClients",
-    "connector": "remote",
+    "connector": "rest",
     "operations": [
       {
         "template": {
@@ -9,9 +13,11 @@
           "url": "http://www.mocky.io/v2/5808862710000087232b75ac",
           "headers": {
             "accepts": "application/json",
-            "content-type": "application/json"
+            "content-type": "application/json" 
           }
+
         }
+
       }
     ]
   }

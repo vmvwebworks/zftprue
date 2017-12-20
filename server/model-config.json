@@ -38,7 +38,7 @@
   "Message": {
     "dataSource": null
   },
-  "client": {
+  "Client": {
     "dataSource": "remoteClients"
   }
 }
