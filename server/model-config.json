@@ -38,8 +38,7 @@
   "Message": {
     "dataSource": null
   },
-  "Client": {
-    "dataSource": "remoteClients",
-    "public": true
+  "client": {
+    "dataSource": "remoteClients"
   }
 }

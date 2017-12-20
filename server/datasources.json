@@ -1,12 +1,18 @@
 {
   "remoteClients": {
-    "url": "http://www.mocky.io/v2/5808862710000087232b75ac",
     "name": "remoteClients",
-    "connector": "rest",
-    "method": "GET",
-    "headers": {
-      "accepts": "application/json",
-      "content-type": "application/json"
-    }
+    "connector": "remote",
+    "operations": [
+      {
+        "template": {
+          "method": "GET",
+          "url": "http://www.mocky.io/v2/5808862710000087232b75ac",
+          "headers": {
+            "accepts": "application/json",
+            "content-type": "application/json"
+          }
+        }
+      }
+    ]
   }
 }
