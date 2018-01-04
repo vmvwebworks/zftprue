@@ -1,45 +1,25 @@
 {
-  "name": "Client",
-  "base": "PersistedModel",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "id": {
-      "type": "string"
+    "name": "client",
+    "base": "PersistedModel",
+    "idInjection":false,
+    "properties": {
     },
-    "name": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
-    },
-    "role": {
-      "type": "string"
-    },
-    "Clients": {
-      "type": [
-        "object"
-      ]
-    }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [
-    {
-      "accessType": "EXECUTE",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "ALLOW",
-      "property": "find"
-    },
-    {
-      "accessType": "READ",
-      "principalType": "ROLE",
-      "principalId": "$everyone",
-      "permission": "ALLOW"
-    }
-  ],
-  "methods": {}
-}
+    "validations": [],
+    "relations": {},
+    "acls": [
+      {
+        "accessType": "EXECUTE",
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "find"
+      },
+      {
+        "accessType": "READ",
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW"
+      }
+    ],
+    "methods": {}
+  }

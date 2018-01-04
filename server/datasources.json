@@ -3,18 +3,17 @@
     "name": "db",
     "connector": "memory"
   },
-  "remoteClients": {
-    "name": "remoteClients",
+  "myRest": {
+    "name": "myRest",
     "connector": "rest",
     "operations": [
       {
         "template": {
           "method": "GET",
-          "url": "http://www.mocky.io/v2/5808862710000087232b75ac",
-          "headers": {
-            "accepts": "application/json",
-            "content-type": "application/json"
-          }
+          "url": "http://www.mocky.io/v2/5808862710000087232b75ac"
+        },
+        "functions": {
+          "find": []
         }
       }
     ]
