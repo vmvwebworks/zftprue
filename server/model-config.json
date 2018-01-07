@@ -17,7 +17,10 @@
     "dataSource": "db"
   },
   "client": {
-    "dataSource": "myRest"
+    "dataSource": "clients"
+  },
+  "polity": {
+    "dataSource": "polities"
   },
   "AccessToken": {
     "dataSource": "db",
@@ -37,8 +40,5 @@
   "Role": {
     "dataSource": "db",
     "public": false
-  },
-  "Angular_Loopback": {
-    "dataSource": null
   }
 }

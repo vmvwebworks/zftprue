@@ -1,7 +1,11 @@
 {
-  "name": "client",
+  "name": "polity",
+  "plural": "polities",
   "base": "PersistedModel",
-  "idInjection": false,
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
   "properties": {},
   "validations": [],
   "relations": {},
